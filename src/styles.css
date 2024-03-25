@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.yesIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yesIcon .yes {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(44, 41, 41, 0.5137254902);
+  border-radius: 50%;
+}
+
+.textCenter,
+.textOfThanks {
+  text-align: center;
+}
+
+.centerG {
+  height: 80vh !important;
+}
+
+.pages {
+  width: 500%;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: auto;
+  position: fixed;
+  height: 100vh;
+  transform: translateX(-40%);
+}
+
+.step1,
+.step2,
+.step3,
+.step4,
+.confirm {
+  width: 100% !important;
+  position: relative;
+  height: 100vh;
+}
+.step1 .tiltleText,
+.step2 .tiltleText,
+.step3 .tiltleText,
+.step4 .tiltleText,
+.confirm .tiltleText {
+  color: #0b294b;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.step1 .underText,
+.step2 .underText,
+.step3 .underText,
+.step4 .underText,
+.confirm .underText {
+  color: #9e9ea6;
+  padding-bottom: 1rem;
+}
+.step1 .personalInfo,
+.step2 .personalInfo,
+.step3 .personalInfo,
+.step4 .personalInfo,
+.confirm .personalInfo {
+  width: 350px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: -1px 8px 21px 4px rgba(0, 0, 0, 0.173);
+  -webkit-box-shadow: -1px 8px 21px 4px rgba(0, 0, 0, 0.173);
+  -moz-box-shadow: -1px 8px 21px 4px rgba(0, 0, 0, 0.173);
+}
+.step1 .center,
+.step2 .center,
+.step3 .center,
+.step4 .center,
+.confirm .center {
+  height: 70vh;
+  background-color: #eef5ff;
+  border: none;
+}
+.step1 .footer,
+.step2 .footer,
+.step3 .footer,
+.step4 .footer,
+.confirm .footer {
+  align-items: center;
+  border: none;
+  height: 10vh;
+  background-color: #ffffff;
+  box-shadow: -4px -17px 21px -10px rgba(0, 0, 0, 0.173);
+  -webkit-box-shadow: -4px -17px 21px -10px rgba(0, 0, 0, 0.173);
+  -moz-box-shadow: -4px -17px 21px -10px rgba(0, 0, 0, 0.173);
+}
+.step1 .footer .nextStep,
+.step2 .footer .nextStep,
+.step3 .footer .nextStep,
+.step4 .footer .nextStep,
+.confirm .footer .nextStep {
+  background-color: #032958;
+  color: #effdff;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.name,
+.number,
+.email {
+  padding: 0.5rem 0 !important;
+}
+.name input,
+.number input,
+.email input {
+  padding: 0.75rem 1rem !important;
+  border-radius: 3px;
+  width: 100%;
+  border: 0.5px solid #9e9ea6;
+  font-weight: 500;
+}
+.name input ::placeholder,
+.number input ::placeholder,
+.email input ::placeholder {
+  color: rgba(158, 158, 166, 0.4666666667);
+  opacity: 1; /* Firefox */
+}
+.name input ::-ms-input-placeholder,
+.number input ::-ms-input-placeholder,
+.email input ::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: rgba(158, 158, 166, 0.5607843137);
+}
+.name div,
+.number div,
+.email div {
+  padding-bottom: 0.35rem !important;
+  color: #0b294b;
+  font-weight: 500;
+}
+
+.textOF {
+  color: #0b294b;
+  font-weight: 500;
+}
+.textOF .subPrice {
+  color: #9e9ea6;
+  font-weight: 400;
+}
+
+.arcade,
+.advance,
+.pro {
+  border: 1px solid #9e9ea6;
+  padding-left: 1rem !important;
+  position: relative;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.monthOrYear {
+  background-color: #eff2ff !important;
+  padding: 1rem 2.5rem !important;
+  width: 100%;
+  border-radius: 6px !important;
+  color: #0b294b;
+  font-weight: 500;
+}
+
+.step1 {
+  background-color: red;
+  height: 100vh;
+  position: relative;
+}
+
+.personalInfo {
+  border: 1px solid black;
+  position: absolute;
+  top: 15%;
+  right: 12.5px;
+  padding: 2rem;
+  background-color: bisque;
+  width: 300px;
+  border-radius: 15px;
+}
+.personalInfo .name {
+  padding: 1rem;
+  display: block;
+}
+.personalInfo .name div {
+  padding-bottom: 1rem;
+}
+.personalInfo .name input {
+  padding: 1rem;
+}
+.personalInfo .email {
+  display: block;
+  padding: 1rem;
+}
+.personalInfo .email div {
+  padding-bottom: 1rem;
+}
+.personalInfo .email input {
+  padding: 1rem;
+}
+.personalInfo .number {
+  display: block;
+  padding: 1rem;
+}
+.personalInfo .number div {
+  padding-bottom: 1rem;
+}
+.personalInfo .number input {
+  padding: 1rem;
+}
+
+.backse {
+  background-color: yellow;
+  height: 20vh;
+}
+
+.center {
+  height: 75vh;
+  background-color: #ffe7e7;
+}
+
+.footer {
+  background-color: antiquewhite;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .nextStep {
+  background-color: red;
+  margin: 0.5rem;
+  padding: 0.25rem 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 3.5vh;
+}
+
+.step2 .GoBack {
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.arcade,
+.advance,
+.pro {
+  padding: 1rem;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.arcade .icon,
+.advance .icon,
+.pro .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+.monthOrYear {
+  background-color: rgb(203, 224, 224);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.monthOrYear .change {
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  background-color: #0b294b;
+}
+.monthOrYear .change .dot {
+  padding: 0.4rem;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateX(-10px);
+}
+
+.year {
+  color: rgba(0, 0, 0, 0.5294117647);
+}
+
+.GoBack {
+  background-color: transparent !important;
+  color: #9e9ea6 !important;
+  font-weight: 500;
+}
+
+.nextStep {
+  font-weight: 500;
+}
+
+.step3 .personalInfo {
+  height: 50vh;
+  padding: 1rem 1rem;
+}
+.step3 .personalInfo label {
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid black;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.step3 .personalInfo label .textOfAddOnes {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.step3 .personalInfo label input {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.step4 .personalInfo {
+  height: 50vh;
+  padding: 1rem;
+}
+.step4 .additionalPay {
+  padding: 0.5rem 1rem;
+}
+.step4 .additionalPay .additional {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.step4 .total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colorIt {
+  border: 15px;
+  background-color: #f8f9fe;
+}
+.colorIt .typeOfSub {
+  padding: 1rem 1rem 0 1rem;
+}
+.colorIt .typeOfSub .smallText-1 {
+  padding-top: 0.25rem;
+  border-bottom: 1px solid #eaebf0;
+  padding-bottom: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

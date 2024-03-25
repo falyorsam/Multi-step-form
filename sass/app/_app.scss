@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.yesIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .yes {
+    width: 60px;
+    height: 60px;
+    background-color: #2c292983;
+    border-radius: 50%;
+  }
+}
+.textCenter,
+.textOfThanks {
+  text-align: center;
+}
+.centerG {
+  height: 80vh !important;
+}
+.pages {
+  width: 500%;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: auto;
+  position: fixed;
+  height: 100vh;
+  transform: translateX(-40%);
+}
+.step1,
+.step2,
+.step3,
+.step4,
+.confirm {
+  .tiltleText {
+    color: #0b294b;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .underText {
+    color: #9e9ea6;
+    padding-bottom: 1rem;
+  }
+  width: 100% !important;
+  position: relative;
+  height: 100vh;
+  .personalInfo {
+    width: 350px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: -1px 8px 21px 4px rgba(0, 0, 0, 0.173);
+    -webkit-box-shadow: -1px 8px 21px 4px rgba(0, 0, 0, 0.173);
+    -moz-box-shadow: -1px 8px 21px 4px rgba(0, 0, 0, 0.173);
+  }
+  .center {
+    height: 70vh;
+    background-color: #eef5ff;
+    border: none;
+  }
+  .footer {
+    align-items: center;
+    border: none;
+    height: 10vh;
+    background-color: #ffffff;
+    box-shadow: -4px -17px 21px -10px rgba(0, 0, 0, 0.173);
+    -webkit-box-shadow: -4px -17px 21px -10px rgba(0, 0, 0, 0.173);
+    -moz-box-shadow: -4px -17px 21px -10px rgba(0, 0, 0, 0.173);
+    .nextStep {
+      background-color: #032958;
+      color: #effdff;
+      padding: 1.5rem;
+      border-radius: 5px;
+    }
+  }
+}
+.name,
+.number,
+.email {
+  padding: 0.5rem 0 !important;
+  input {
+    padding: 0.75rem 1rem !important;
+    border-radius: 3px;
+    width: 100%;
+    border: 0.5px solid #9e9ea6;
+    font-weight: 500;
+    ::placeholder {
+      color: #9e9ea677;
+      opacity: 1; /* Firefox */
+    }
+
+    ::-ms-input-placeholder {
+      /* Edge 12 -18 */
+      color: #9e9ea68f;
+    }
+  }
+  div {
+    padding-bottom: 0.35rem !important;
+    color: #0b294b;
+    font-weight: 500;
+  }
+}
+.textOF {
+  color: #0b294b;
+  font-weight: 500;
+  .subPrice {
+    color: #9e9ea6;
+    font-weight: 400;
+  }
+}
+.arcade,
+.advance,
+.pro {
+  border: 1px solid #9e9ea6;
+  padding-left: 1rem !important;
+  position: relative;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+.monthOrYear {
+  background-color: #eff2ff !important;
+  padding: 1rem 2.5rem !important;
+  width: 100%;
+  border-radius: 6px !important;
+  color: #0b294b;
+  font-weight: 500;
+}

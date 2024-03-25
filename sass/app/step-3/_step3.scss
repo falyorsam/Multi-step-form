@@ -1,0 +1,25 @@
+.step3 {
+  .personalInfo {
+    height: 50vh;
+    padding: 1rem 1rem;
+    label {
+      border-radius: 10px;
+      padding: 1rem;
+      border: 1px solid black;
+      margin: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .textOfAddOnes {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+      }
+      input {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.step2 {
+  .GoBack {
+    background-color: rgba(255, 0, 0, 0);
+  }
+}
+.arcade,
+.advance,
+.pro {
+  padding: 1rem;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.233);
+  }
+}
+.monthOrYear {
+  background-color: rgb(203, 224, 224);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .change {
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+
+    .dot {
+      padding: 0.4rem;
+      border-radius: 50%;
+      background-color: white;
+      transform: translateX(-10px);
+    }
+    background-color: #0b294b;
+  }
+}
+.year {
+  color: #00000087;
+}
+.GoBack {
+  background-color: transparent !important;
+  color: #9e9ea6 !important;
+  font-weight: 500;
+}
+.nextStep {
+  font-weight: 500;
+}

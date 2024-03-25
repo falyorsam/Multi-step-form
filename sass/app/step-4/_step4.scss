@@ -1,0 +1,31 @@
+.step4 {
+  .personalInfo {
+    height: 50vh;
+    padding: 1rem;
+  }
+  .additionalPay {
+    padding: 0.5rem 1rem;
+
+    .additional {
+      padding: 0.5rem 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.colorIt {
+  border: 15px;
+  background-color: #f8f9fe;
+  .typeOfSub {
+    padding: 1rem 1rem 0 1rem;
+    .smallText-1 {
+      padding-top: 0.25rem;
+      border-bottom: 1px solid #eaebf0;
+      padding-bottom: 1rem;
+    }
+  }
+}
