@@ -2,7 +2,22 @@ import { IconArcade } from "../images/icon-arcade";
 import { IconPro } from "../images/icon-pro";
 import { IconAdvance } from "../images/icon-advanced";
 
-const Step2 = ({ BackGround, values, DescBc, funcy }) => {
+const Step2 = ({
+  BackGround,
+  values,
+  DescBc,
+  funcy,
+  handleNextClick,
+  step2,
+  handleStep1ar,
+  handleStep1ad,
+  handleStep1pro,
+  handleStepInfo,
+  step2Info,
+  step2ValueAr,
+  handleYM,
+  subYMX,
+}) => {
   window.addEventListener("resize", () => {
     funcy();
   });
@@ -13,7 +28,13 @@ const Step2 = ({ BackGround, values, DescBc, funcy }) => {
         <div className="underText">
           please provide your name , email address , and phone number.
         </div>
-        <div className="arcade">
+        <div
+          onClick={() => {
+            handleStep1ar();
+          }}
+          style={step2.ar}
+          className="arcade"
+        >
           <div className="icon">
             <IconArcade />
           </div>
@@ -22,7 +43,13 @@ const Step2 = ({ BackGround, values, DescBc, funcy }) => {
             <div className="subPrice">$9/mo</div>
           </div>
         </div>
-        <div className="advance">
+        <div
+          onClick={() => {
+            handleStep1ad();
+          }}
+          style={step2.ad}
+          className="advance"
+        >
           <div className="icon">
             <IconAdvance />
           </div>
@@ -31,7 +58,13 @@ const Step2 = ({ BackGround, values, DescBc, funcy }) => {
             <div className="subPrice">$9/mo</div>
           </div>
         </div>
-        <div className="pro">
+        <div
+          onClick={() => {
+            handleStep1pro();
+          }}
+          style={step2.pro}
+          className="pro"
+        >
           <div className="icon">
             <IconPro />
           </div>
@@ -42,8 +75,13 @@ const Step2 = ({ BackGround, values, DescBc, funcy }) => {
         </div>
         <div className="monthOrYear">
           <div className="month">monthly</div>
-          <div className="change">
-            <div className="dot"></div>
+          <div
+            onClick={() => {
+              handleYM();
+            }}
+            className="change"
+          >
+            <div style={subYMX} className="dot"></div>
           </div>
           <div className="year">yearly</div>
         </div>
@@ -51,10 +89,27 @@ const Step2 = ({ BackGround, values, DescBc, funcy }) => {
       <div className="backse">{values ? <DescBc /> : <BackGround />}</div>
       <div className="center"></div>
       <div className="footer">
-        <div className="GoBack nextStep">GO Back</div>
-        <div className="nextStep">Next Step</div>
+        <div
+          onClick={() => {
+            handleNextClick(0);
+            handleStepInfo();
+          }}
+          className="GoBack nextStep"
+        >
+          GO Back
+        </div>
+        <div
+          onClick={() => {
+            handleStepInfo();
+            handleNextClick(40);
+          }}
+          className="nextStep"
+        >
+          Next Step
+        </div>
       </div>
     </div>
   );
 };
+
 export default Step2;

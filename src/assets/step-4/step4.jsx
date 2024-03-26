@@ -1,12 +1,14 @@
-const Step4 = ({ BackGround, values, DescBc, funcy }) => {
+const Step4 = ({ BackGround, values, DescBc, funcy, handleNextClick }) => {
   window.addEventListener("resize", () => {
     funcy();
   });
   return (
     <div className="step4">
       <div className="personalInfo">
-        <div className="tiltleText"></div>
-        <div className="underText"></div>
+        <div className="tiltleText">Finishing up</div>
+        <div className="underText">
+          double-check everything looks OK before confirming
+        </div>
 
         <div className="theSub">
           <div className="colorIt">
@@ -35,8 +37,22 @@ const Step4 = ({ BackGround, values, DescBc, funcy }) => {
       <div className="backse">{values ? <DescBc /> : <BackGround />}</div>
       <div className="center"></div>
       <div className="footer">
-        <div className="GoBack nextStep">GO Back</div>
-        <div className="nextStep">Next Step</div>
+        <div
+          onClick={() => {
+            handleNextClick(40);
+          }}
+          className="GoBack nextStep"
+        >
+          GO Back
+        </div>
+        <div
+          onClick={() => {
+            handleNextClick(80);
+          }}
+          className="nextStep"
+        >
+          Next Step
+        </div>
       </div>
     </div>
   );

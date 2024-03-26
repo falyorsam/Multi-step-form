@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 const ThemeContext = React.createContext();
-const Step1 = ({ BackGround, values, DescBc, funcy }) => {
+const Step1 = ({
+  BackGround,
+  values,
+  DescBc,
+  funcy,
+  handleNextClick,
+  step1s,
+  handleStep1,
+}) => {
   window.addEventListener("resize", () => {
     funcy();
   });
-  console.log(values);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const name = e.currentTarget.name.value;
+    const email = e.currentTarget.EmailAddress.value;
+    const number = e.currentTarget.PhoneNumber.value;
+
+    handleStep1(name, email, number);
+  };
   return (
     <ThemeContext.Provider value={values}>
       <div className="step1">
@@ -13,7 +28,7 @@ const Step1 = ({ BackGround, values, DescBc, funcy }) => {
           <div className="underText">
             please provide your name , email address , and phone number.
           </div>
-          <form action="submit">
+          <form onSubmit={handleSubmit} action="submit">
             {" "}
             <label className="name" htmlFor="name">
               <div>Name</div>
@@ -35,14 +50,25 @@ const Step1 = ({ BackGround, values, DescBc, funcy }) => {
                 placeholder="e.g. +1 234 567 890"
               />
             </label>
+            <div className="lastBlock">
+              <div className="footer">
+                <div className="pushRight">
+                  {" "}
+                  <button
+                    onClick={() => {
+                      handleNextClick(20);
+                    }}
+                    className="nextStep"
+                  >
+                    Next Step
+                  </button>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
         <div className="backse">{values ? <DescBc /> : <BackGround />}</div>
         <div className="center"></div>
-        <div className="footer">
-          <div className="pushRight"></div>
-          <div className="nextStep">Next Step</div>
-        </div>
       </div>
     </ThemeContext.Provider>
   );

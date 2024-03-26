@@ -35,7 +35,6 @@
   overflow-y: auto;
   position: fixed;
   height: 100vh;
-  transform: translateX(-40%);
 }
 
 .step1,
@@ -172,8 +171,78 @@
   font-weight: 500;
 }
 
+.bigText {
+  font-weight: 500;
+  color: #0b294b;
+}
+
+.smallText {
+  color: #838383;
+}
+
+.priceOfAddOnes {
+  font-weight: 500;
+  color: #7c79da;
+}
+
+.step3 .personalInfo label input {
+  border: 1px solid #838383;
+  color: #838383;
+}
+
+.step3 .personalInfo {
+  padding-top: 2rem !important;
+  height: 55vh !important;
+}
+
+.textCenter {
+  color: #032859;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.textOfThanks {
+  color: #7c7c7c;
+  padding: 1rem;
+}
+
+.confirm .personalInfo {
+  padding-top: 5rem;
+}
+
+.pages {
+  transition: transform 0.25s;
+}
+
+.center {
+  height: 70vh !important;
+}
+
+.lastBlock {
+  position: fixed;
+  width: 375px;
+  height: 10vh;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+  left: 0;
+}
+.lastBlock .footer {
+  width: 100% !important;
+  display: grid;
+  justify-content: end;
+}
+
+.dot {
+  transition: all 2s;
+}
+
+.change {
+  transition: all 2s;
+}
+
 .step1 {
-  background-color: red;
   height: 100vh;
   position: relative;
 }
@@ -309,7 +378,7 @@
 .step3 .personalInfo label {
   border-radius: 10px;
   padding: 1rem;
-  border: 1px solid black;
+  border: 1px solid #838383;
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
@@ -327,8 +396,9 @@
 }
 
 .step4 .personalInfo {
-  height: 50vh;
   padding: 1rem;
+  padding-top: 2rem !important;
+  height: 50vh !important;
 }
 .step4 .additionalPay {
   padding: 0.5rem 1rem;
@@ -344,16 +414,40 @@
 }
 
 .colorIt {
+  border-radius: 10px;
   border: 15px;
-  background-color: #f8f9fe;
+  background-color: #f3f5ff;
 }
 .colorIt .typeOfSub {
   padding: 1rem 1rem 0 1rem;
 }
+.colorIt .typeOfSub .bigText-1 {
+  color: #0b294b;
+  font-weight: 500;
+}
 .colorIt .typeOfSub .smallText-1 {
+  color: #838383;
   padding-top: 0.25rem;
   border-bottom: 1px solid #eaebf0;
   padding-bottom: 1rem;
+}
+
+.texty {
+  color: #838383;
+}
+
+.pricePayed {
+  color: #7c79da;
+  font-weight: 500;
+}
+
+.total {
+  padding: 2rem 1rem;
+  color: #838383;
+}
+.total .priceTotal {
+  color: #7c79da;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */
