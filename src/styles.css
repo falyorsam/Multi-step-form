@@ -235,11 +235,11 @@
 }
 
 .dot {
-  transition: all 2s;
+  transition: all 0.5s;
 }
 
 .change {
-  transition: all 2s;
+  transition: all 0.5s;
 }
 
 .step1 {
@@ -398,7 +398,7 @@
 .step4 .personalInfo {
   padding: 1rem;
   padding-top: 2rem !important;
-  height: 50vh !important;
+  height: 55vh !important;
 }
 .step4 .additionalPay {
   padding: 0.5rem 1rem;
@@ -418,9 +418,6 @@
   border: 15px;
   background-color: #f3f5ff;
 }
-.colorIt .typeOfSub {
-  padding: 1rem 1rem 0 1rem;
-}
 .colorIt .typeOfSub .bigText-1 {
   color: #0b294b;
   font-weight: 500;
@@ -428,7 +425,6 @@
 .colorIt .typeOfSub .smallText-1 {
   color: #838383;
   padding-top: 0.25rem;
-  border-bottom: 1px solid #eaebf0;
   padding-bottom: 1rem;
 }
 
@@ -448,6 +444,32 @@
 .total .priceTotal {
   color: #7c79da;
   font-weight: 500;
+}
+
+.typeOfSub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 1rem 0 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid #eaebf0;
+}
+
+.smallText-1 {
+  text-decoration: underline;
+}
+
+.yes {
+  padding: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  position: relative;
+  top: -70px;
+  left: -40px;
+}
+
+.yesIcon {
+  height: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

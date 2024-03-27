@@ -163,27 +163,27 @@ function App() {
 
   /////////////////////////////////////
   const [subYM, setSubYM] = useState(false);
-  const [subYMX, setSubYMX] = useState({ transform: "translateX(10px)" });
+  const [subYMX, setSubYMX] = useState({ transform: "translateX(-10px)" });
   const handleYM = () => {
     if (subYM === true) {
-      console.log("yes");
       setSubYM(!subYM);
       setSubYMX({
-        transform: "translateX(10px)",
+        transform: "translateX(-10px)",
       });
     } else if (subYM === false) {
       console.log("log");
       setSubYM(!subYM);
       setSubYMX({
-        transform: "translateX(-10px)",
+        transform: "translateX(10px)",
       });
     }
   };
   /////////////////////////////////////
-  const [check1, setCheck1] = useState({});
-  const [check2, setCheck2] = useState({});
-  const [check3, setCheck3] = useState({});
-  const [checkBoxs, setCheckBoxs] = useState({});
+  const [check1, setCheck1] = useState({ firstCheck: "", id: 1 });
+  const [check2, setCheck2] = useState({ firstCheck: "", id: 2 });
+  const [check3, setCheck3] = useState({ firstCheck: "", id: 3 });
+  const [checkBoxs, setCheckBoxs] = useState([check1, check2, check3]);
+  // console.log(checkBoxs);
   const handleCheck = (e) => {
     console.log();
     const checkBox = e.currentTarget;
@@ -192,21 +192,21 @@ function App() {
     const checky2 = label.secCheck;
     const checky3 = label.thCheck;
     if (checky1.checked) {
-      setCheck1({ firstCheck: "checked" });
+      setCheck1({ firstCheck: "checked", id: 1 });
     } else {
-      setCheck1({ firstCheck: "notChecked" });
+      setCheck1({ firstCheck: "notChecked", id: 1 });
     }
     //
     if (checky2.checked) {
-      setCheck2({ firstCheck: "checked" });
+      setCheck2({ firstCheck: "checked", id: 2 });
     } else {
-      setCheck2({ firstCheck: "notChecked" });
+      setCheck2({ firstCheck: "notChecked", id: 2 });
     }
     //
     if (checky3.checked) {
-      setCheck3({ firstCheck: "checked" });
+      setCheck3({ firstCheck: "checked", id: 3 });
     } else {
-      setCheck3({ firstCheck: "notChecked" });
+      setCheck3({ firstCheck: "notChecked", id: 3 });
     }
     const border = e.currentTarget.parentElement.parentElement;
     if (checkBox.checked) {
@@ -218,9 +218,22 @@ function App() {
     }
   };
   useEffect(() => {
-    setCheckBoxs({ check1: check1, check2: check2, check3: check3 });
+    setCheckBoxs([check1, check2, check3]);
   }, [check1, check2, check3]);
-  console.log(checkBoxs);
+
+  const [user, setUser] = useState({
+    userinfo: "",
+    sub: { type: "", yearOrMonth: "" },
+    boxes: "",
+  });
+  useEffect(() => {
+    setUser({
+      userinfo: step1,
+      sub: { type: step2Info, yearOrMonth: subYM },
+      boxes: checkBoxs,
+    });
+  }, [next]);
+
   /////////////////////////////////////
   return (
     <ThemeContext.Provider value={mobile}>
@@ -265,6 +278,11 @@ function App() {
           DescBc={BGSideBar}
           funcy={sick}
           handleNextClick={handleNextClick}
+          userInfo={user}
+          next={next}
+          checky1={check1}
+          checky2={check2}
+          checky3={check3}
         />
         <Flex
           BackGround={BGSideBarMobile}

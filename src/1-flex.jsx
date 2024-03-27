@@ -1,4 +1,5 @@
 import { BGSideBarMobile } from "./assets/images/bg-sidebar-mobile";
+import { IconTy } from "./assets/images/icon-thank-you";
 import React, { useEffect, useState } from "react";
 const Flex = ({ BackGround, values, DescBc, funcy }) => {
   window.addEventListener("resize", () => {
@@ -8,14 +9,19 @@ const Flex = ({ BackGround, values, DescBc, funcy }) => {
     <div className="confirm">
       <div className="personalInfo">
         <div className="yesIcon">
-          <div className="yes"></div>
+          <div className="yes">
+            <IconTy />
+          </div>
         </div>
-        <div className="textCenter"> Lorem ipsum </div>
+        <div style={{ fontWeight: "600" }} className="textCenter">
+          thank you{" "}
+        </div>
 
         <div className="textOfThanks">
           <div>
-            sed laudantium ratione laborum voluptatum est, voluptatem aut quae
-            quas consequuntur quibusdam! Maxime ipsa molestiae sint maiores
+            thanks for confirming your subscription we hope you have fun using
+            our platform . if you even need support please feel free to email us
+            at support@loremgaming.com
           </div>
         </div>
       </div>
