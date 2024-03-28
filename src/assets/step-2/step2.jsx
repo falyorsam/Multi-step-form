@@ -17,6 +17,11 @@ const Step2 = ({
   step2ValueAr,
   handleYM,
   subYMX,
+  steps1,
+  steps2,
+  steps3,
+  steps4,
+  subYM,
 }) => {
   window.addEventListener("resize", () => {
     funcy();
@@ -40,7 +45,9 @@ const Step2 = ({
           </div>
           <div className="textOF">
             <div>arcade</div>
-            <div className="subPrice">$9/mo</div>
+            <div className="subPrice">
+              {subYM ? <div>90$/month</div> : <div>9$/month</div>}
+            </div>
           </div>
         </div>
         <div
@@ -54,8 +61,10 @@ const Step2 = ({
             <IconAdvance />
           </div>
           <div className="textOF">
-            <div>arcade</div>
-            <div className="subPrice">$9/mo</div>
+            <div>advance</div>
+            <div className="subPrice">
+              {subYM ? <div>120$/month</div> : <div>12$/month</div>}
+            </div>
           </div>
         </div>
         <div
@@ -70,7 +79,9 @@ const Step2 = ({
           </div>
           <div className="textOF">
             <div>arcade</div>
-            <div className="subPrice">$9/mo</div>
+            <div className="subPrice">
+              {subYM ? <div>150$/month</div> : <div>15$/month</div>}
+            </div>
           </div>
         </div>
         <div className="monthOrYear">

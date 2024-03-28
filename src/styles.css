@@ -242,6 +242,61 @@
   transition: all 0.5s;
 }
 
+.backse {
+  background-color: #eef5ff !important;
+}
+
+.steps1234 {
+  font-weight: 900;
+  display: flex;
+  width: 100%;
+  padding: 0 15%;
+  justify-content: space-between;
+  position: fixed;
+  top: 3rem;
+  z-index: 2;
+}
+.steps1234 .stepNum {
+  font-size: 1.25rem;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #bde1fe;
+  color: #bde1fe;
+  border-radius: 50%;
+}
+
+.albs {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.step1235 {
+  width: 35%;
+  display: block !important;
+  height: 50vh;
+  padding: 1% 19%;
+  padding-right: 0;
+}
+.step1235 .flex {
+  padding-top: 2rem;
+  align-items: center;
+  gap: 1rem;
+  color: #eae8ff;
+}
+.step1235 .flex .firstTXT {
+  color: #9e9bfd;
+  font-weight: 300;
+}
+.step1235 .flex .secTXT {
+  font-weight: 600;
+}
+
 .step1 {
   height: 100vh;
   position: relative;
@@ -470,6 +525,59 @@
 
 .yesIcon {
   height: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .backse {
+    position: relative;
+    left: 17.5%;
+    top: 56px;
+    height: 0rem;
+  }
+  .personalInfo {
+    width: 70% !important;
+    height: 80% !important;
+    top: 50px;
+    right: 13%;
+    position: absolute;
+    padding-left: 19rem;
+  }
+  .personalInfo .lastBlock {
+    position: relative !important;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: none !important;
+  }
+  .personalInfo .lastBlock .footer {
+    box-shadow: none !important;
+    padding-top: 8rem;
+  }
+  .step2 .personalInfo,
+  .step3 .personalInfo,
+  .step4 .personalInfo {
+    width: 70% !important;
+    height: 80% !important;
+    padding-left: 19rem !important;
+  }
+  .step2 .footer,
+  .step3 .footer,
+  .step4 .footer {
+    position: absolute;
+    width: 50%;
+    left: 37%;
+    top: 75%;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .center {
+    height: 100vh !important;
+  }
+  .pages {
+    transition: none !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

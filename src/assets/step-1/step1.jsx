@@ -8,6 +8,10 @@ const Step1 = ({
   handleNextClick,
   step1s,
   handleStep1,
+  steps1,
+  steps2,
+  steps3,
+  steps4,
 }) => {
   window.addEventListener("resize", () => {
     funcy();

@@ -195,3 +195,58 @@
 .change {
   transition: all 0.5s;
 }
+.backse {
+  background-color: #eef5ff !important;
+}
+.steps1234 {
+  font-weight: 900;
+
+  display: flex;
+  width: 100%;
+  padding: 0 15%;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 3rem;
+  z-index: 2;
+  .stepNum {
+    font-size: 1.25rem;
+
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #bde1fe;
+    color: #bde1fe;
+    border-radius: 50%;
+  }
+}
+.albs {
+  position: relative;
+}
+.flex {
+  display: flex;
+}
+.step1235 {
+  width: 35%;
+  display: block !important;
+  height: 50vh;
+
+  padding: 1% 19%;
+  padding-right: 0;
+
+  .flex {
+    padding-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+    color: #eae8ff;
+    .firstTXT {
+      color: #9e9bfd;
+      font-weight: 300;
+    }
+    .secTXT {
+      font-weight: 600;
+    }
+  }
+}

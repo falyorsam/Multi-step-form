@@ -5,6 +5,11 @@ const Step3 = ({
   funcy,
   handleNextClick,
   handleCheck,
+  steps1,
+  steps2,
+  steps3,
+  steps4,
+  subYM,
 }) => {
   window.addEventListener("resize", () => {
     funcy();
@@ -26,7 +31,9 @@ const Step3 = ({
                 <div className="smallText">small txt</div>
               </div>
             </div>
-            <div className="priceOfAddOnes">9$</div>
+            <div className="priceOfAddOnes">
+              {subYM ? <div>12$</div> : <div>1$</div>}
+            </div>
           </label>
           <label htmlFor="LargerStorage">
             <div className="textOfAddOnes">
@@ -37,7 +44,9 @@ const Step3 = ({
                 <div className="smallText">small txt</div>
               </div>
             </div>
-            <div className="priceOfAddOnes">9$</div>
+            <div className="priceOfAddOnes">
+              {subYM ? <div>24$</div> : <div>2$</div>}
+            </div>
           </label>
           <label htmlFor="CustomizableProfile">
             <div className="textOfAddOnes">
@@ -53,7 +62,9 @@ const Step3 = ({
                 <div className="smallText">small txt</div>
               </div>
             </div>
-            <div className="priceOfAddOnes">9$</div>
+            <div className="priceOfAddOnes">
+              {subYM ? <div>24$</div> : <div>2$</div>}
+            </div>
           </label>
         </form>
       </div>
